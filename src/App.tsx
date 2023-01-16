@@ -19,9 +19,6 @@ function App() {
         <Route path="flags" element={<FlagTest />} />
         <Route path="languages" element={<LanguageTest />} />
         <Route path="currency" element={<CurrencyTest />} />
-        <Route path="name/">
-          <Route path=":countryName" element={<Country />} />
-        </Route>
       </Route>
     </Routes>
   );
