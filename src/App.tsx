@@ -1,7 +1,6 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout";
-import { Country } from "./components/Country";
 import { RegionsTest } from "./components/RegionsTest";
 import { CapitalTest } from "./components/CapitalTest";
 import { FlagTest } from "./components/FlagTest";
