@@ -67,7 +67,7 @@ export function CurrencyTest() {
   return (
     <Container
       sx={{
-        height: { xs: "150vh", md: "100vh", lg: "100vh" },
+        height: { xs: "100vh", md: "100vh", lg: "100vh" },
         width: "100vw",
         display: "flex",
         alignItems: "center",
@@ -81,7 +81,7 @@ export function CurrencyTest() {
           display: "flex",
           flexDirection: "column",
           gap: "20px",
-          height: { xs: "150vh", md: "100vh", lg: "100vh" },
+          height: { xs: "100vh", md: "100vh", lg: "100vh" },
           justifyContent: "center",
         }}
       >

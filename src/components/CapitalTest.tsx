@@ -62,11 +62,12 @@ export function CapitalTest() {
   return (
     <Container
       sx={{
-        height: { xs: "150vh", md: "100vh", lg: "100vh" },
+        height: { xs: "100vh", md: "100vh", lg: "100vh" },
         width: "100vw",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        position: "relative",
       }}
     >
       <Container
@@ -75,7 +76,7 @@ export function CapitalTest() {
           display: "flex",
           flexDirection: "column",
           gap: "20px",
-          height: { xs: "150vh", md: "100vh", lg: "100vh" },
+          height: { xs: "100vh", md: "100vh", lg: "100vh" },
           justifyContent: "center",
         }}
       >
