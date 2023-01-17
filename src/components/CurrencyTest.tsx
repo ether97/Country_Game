@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/material";
+import { Button, Container, Typography } from "@mui/material";
 import { useState } from "react";
 import { useGetCountriesQuery } from "../features/api/apiSlice";
 import { useAppDispatch, useAppSelector } from "../features/app/hooks";
@@ -74,12 +74,14 @@ export function CurrencyTest() {
         justifyContent: "center",
       }}
     >
-      <div
-        style={{
-          minWidth: "1000px",
+      <Container
+        sx={{
+          minWidth: { xs: "400px", md: "800px", lg: "800px" },
           display: "flex",
           flexDirection: "column",
           gap: "20px",
+          height: "100vh",
+          justifyContent: "center",
         }}
       >
         <h1 style={{ textAlign: "center" }}>
@@ -156,7 +158,7 @@ export function CurrencyTest() {
         <Typography sx={{ textAlign: "center", display: hintDisplay }}>
           The capital of this country is {capitalHint}
         </Typography>
-      </div>
+      </Container>
       <div style={{ position: "absolute", bottom: "0px", left: "20px" }}>
         <Typography sx={{ fontSize: { xs: "1.5rem", md: "3rem", lg: "3rem" } }}>
           Correct: {correct}

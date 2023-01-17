@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/material";
+import { Button, Container, Typography } from "@mui/material";
 import { useState } from "react";
 import { useGetCountriesQuery } from "../features/api/apiSlice";
 import { useAppDispatch, useAppSelector } from "../features/app/hooks";
@@ -92,14 +92,13 @@ export function RegionsTest() {
   let content;
   if (isSuccess) {
     content = (
-      <div
-        style={{
+      <Container
+        sx={{
+          minWidth: { xs: "400px", md: "800px", lg: "800px" },
           display: "flex",
           flexDirection: "column",
-          gap: "50px",
+          gap: "20px",
           height: "100vh",
-          minWidth: "800px",
-          // alignItems: "center",
           justifyContent: "center",
         }}
       >
@@ -182,7 +181,7 @@ export function RegionsTest() {
         <Typography sx={{ textAlign: "center", display: hintDisplay }}>
           The subregion is {subRegionHint}
         </Typography>
-      </div>
+      </Container>
     );
   }
   return (
