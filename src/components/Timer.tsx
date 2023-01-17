@@ -93,7 +93,7 @@ export function Timer() {
             <p
               style={{
                 color: count < 10 ? "red" : count < 30 ? "orange" : "green",
-                fontSize: "3rem",
+                fontSize: "2rem",
                 lineHeight: "0rem",
               }}
             >
