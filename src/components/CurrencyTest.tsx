@@ -72,6 +72,7 @@ export function CurrencyTest() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        position: "relative",
       }}
     >
       <Container
