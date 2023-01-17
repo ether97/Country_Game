@@ -131,7 +131,7 @@ export function Timer() {
             id="modal-modal-title"
             variant="h1"
             component="h2"
-            sx={{ fontSize: { xs: "4rem", md: "6rem", lg: "6rem" } }}
+            sx={{ fontSize: { xs: "2rem", md: "6rem", lg: "6rem" } }}
           >
             GAME OVER!
           </Typography>

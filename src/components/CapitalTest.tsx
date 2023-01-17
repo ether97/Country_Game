@@ -1,4 +1,4 @@
-import { Button, Container, Typography } from "@mui/material";
+import { Box, Button, Container, Typography } from "@mui/material";
 import { useState } from "react";
 import { useGetCountriesQuery } from "../features/api/apiSlice";
 import { useAppDispatch, useAppSelector } from "../features/app/hooks";
@@ -157,7 +157,13 @@ export function CapitalTest() {
           The country is in {regionHint}
         </Typography>
       </Container>
-      <div style={{ position: "absolute", bottom: "0px", left: "20px" }}>
+      <Box
+        sx={{
+          position: "absolute",
+          bottom: { xs: "-20px", md: "10px", lg: "10px" },
+          left: "20px",
+        }}
+      >
         <Typography sx={{ fontSize: { xs: "1.5rem", md: "3rem", lg: "3rem" } }}>
           Correct: {correct}
         </Typography>
@@ -167,7 +173,7 @@ export function CapitalTest() {
         <Typography sx={{ fontSize: { xs: "1.5rem", md: "3rem", lg: "3rem" } }}>
           Hints remaining: {hints}
         </Typography>
-      </div>
+      </Box>
     </div>
   );
 }

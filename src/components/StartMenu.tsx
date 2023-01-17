@@ -69,12 +69,21 @@ export function StartMenu() {
       >
         <Typography
           variant="h1"
-          sx={{ fontSize: { xs: "4rem", md: "6rem", lg: "6rem" } }}
+          sx={{ fontSize: { xs: "3rem", md: "6rem", lg: "6rem" } }}
         >
           Country Game
         </Typography>
         <Typography variant="h4">Test your skills: </Typography>
-        <div style={{ display: "flex", gap: "20px", flexDirection: "column" }}>
+        <div
+          style={{
+            display: "flex",
+            gap: "20px",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "100%",
+          }}
+        >
           <Link
             to="/flags"
             style={{
@@ -86,7 +95,7 @@ export function StartMenu() {
             <Button
               variant="outlined"
               sx={{
-                width: "400px",
+                width: { xs: "350px", md: "400px", lg: "400px" },
                 color: "white",
                 "&:disabled": {
                   backgroundColor: "rgba(255,255,255,0.1)",
@@ -127,7 +136,7 @@ export function StartMenu() {
             <Button
               variant="outlined"
               sx={{
-                width: "400px",
+                width: { xs: "350px", md: "400px", lg: "400px" },
                 color: "white",
 
                 "&:disabled": {
@@ -169,7 +178,7 @@ export function StartMenu() {
             <Button
               variant="outlined"
               sx={{
-                width: "400px",
+                width: { xs: "350px", md: "400px", lg: "400px" },
                 color: "white",
 
                 "&:disabled": {
@@ -211,7 +220,7 @@ export function StartMenu() {
             <Button
               variant="outlined"
               sx={{
-                width: "400px",
+                width: { xs: "350px", md: "400px", lg: "400px" },
                 color: "white",
 
                 "&:disabled": {
@@ -259,7 +268,7 @@ export function StartMenu() {
             <Button
               variant="outlined"
               sx={{
-                width: "400px",
+                width: { xs: "350px", md: "400px", lg: "400px" },
                 color: "white",
                 "&:disabled": {
                   backgroundColor: "rgba(255,255,255,0.1)",

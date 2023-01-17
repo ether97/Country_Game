@@ -1,4 +1,4 @@
-import { Button, Container, Typography } from "@mui/material";
+import { Box, Button, Container, Typography } from "@mui/material";
 import { useRef, useState } from "react";
 import { useGetCountriesQuery } from "../features/api/apiSlice";
 import { useAppDispatch, useAppSelector } from "../features/app/hooks";
@@ -174,7 +174,13 @@ export function FlagTest() {
         <Typography sx={{ textAlign: "center", display: hintDisplay }}>
           This country is located in {regionHint}
         </Typography>
-        <div style={{ position: "absolute", bottom: "10px", left: "20px" }}>
+        <Box
+          sx={{
+            position: "absolute",
+            bottom: { xs: "-20px", md: "10px", lg: "10px" },
+            left: "20px",
+          }}
+        >
           <Typography
             sx={{ fontSize: { xs: "1.5rem", md: "3rem", lg: "3rem" } }}
           >
@@ -190,7 +196,7 @@ export function FlagTest() {
           >
             Hints remaining: {hints}
           </Typography>
-        </div>
+        </Box>
       </Container>
     </div>
   );
