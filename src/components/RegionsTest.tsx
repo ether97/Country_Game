@@ -98,7 +98,7 @@ export function RegionsTest() {
           display: "flex",
           flexDirection: "column",
           gap: "20px",
-          height: "100vh",
+          height: "900px",
           justifyContent: "center",
         }}
       >
@@ -187,7 +187,7 @@ export function RegionsTest() {
   return (
     <div
       style={{
-        height: "100vh",
+        height: "900px",
         width: "100vw",
         display: "flex",
         alignItems: "center",

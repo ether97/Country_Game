@@ -62,7 +62,7 @@ export function CapitalTest() {
   return (
     <div
       style={{
-        height: "100vh",
+        height: "900px",
         width: "100vw",
         display: "flex",
         alignItems: "center",
@@ -75,7 +75,7 @@ export function CapitalTest() {
           display: "flex",
           flexDirection: "column",
           gap: "20px",
-          height: "100vh",
+          height: "900px",
           justifyContent: "center",
         }}
       >

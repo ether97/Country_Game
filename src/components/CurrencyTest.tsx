@@ -67,7 +67,7 @@ export function CurrencyTest() {
   return (
     <div
       style={{
-        height: "100vh",
+        height: "900px",
         width: "100vw",
         display: "flex",
         alignItems: "center",
@@ -80,7 +80,7 @@ export function CurrencyTest() {
           display: "flex",
           flexDirection: "column",
           gap: "20px",
-          height: "100vh",
+          height: "900px",
           justifyContent: "center",
         }}
       >
