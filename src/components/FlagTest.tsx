@@ -64,7 +64,7 @@ export function FlagTest() {
   return (
     <Container
       sx={{
-        height: { xs: "100vh", md: "100vh", lg: "100vh" },
+        height: { xs: "120vh", md: "100vh", lg: "100vh" },
         width: "100vw",
         display: "flex",
         alignItems: "center",
@@ -78,7 +78,7 @@ export function FlagTest() {
           display: "flex",
           flexDirection: "column",
           gap: "20px",
-          height: { xs: "100vh", md: "100vh", lg: "100vh" },
+          height: { xs: "120vh", md: "100vh", lg: "100vh" },
           justifyContent: "center",
         }}
       >
