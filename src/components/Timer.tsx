@@ -80,13 +80,15 @@ export function Timer() {
       <div
         style={{
           position: "absolute",
-          top: "0px",
+          top: "20px",
           left: "20px",
           width: "400px",
         }}
       >
         {start && (
-          <h1 style={{}}>
+          <Typography
+            sx={{ fontSize: { xs: "1.5rem", md: "3rem", lg: "3rem" } }}
+          >
             Time remaining:{" "}
             <p
               style={{
@@ -97,7 +99,7 @@ export function Timer() {
             >
               {count}
             </p>
-          </h1>
+          </Typography>
         )}
       </div>
       <Modal
@@ -125,7 +127,12 @@ export function Timer() {
             gap: "20px",
           }}
         >
-          <Typography id="modal-modal-title" variant="h1" component="h2">
+          <Typography
+            id="modal-modal-title"
+            variant="h1"
+            component="h2"
+            sx={{ fontSize: { xs: "4rem", md: "6rem", lg: "6rem" } }}
+          >
             GAME OVER!
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>

@@ -196,9 +196,15 @@ export function RegionsTest() {
       }}
     >
       <div style={{ position: "absolute", bottom: "0px", left: "20px" }}>
-        <h1>Correct: {correct}</h1>
-        <h1>Incorrect: {incorrect}</h1>
-        <h1>Hints remaining: {hints}</h1>
+        <Typography sx={{ fontSize: { xs: "1.5rem", md: "3rem", lg: "3rem" } }}>
+          Correct: {correct}
+        </Typography>
+        <Typography sx={{ fontSize: { xs: "1.5rem", md: "3rem", lg: "3rem" } }}>
+          Incorrect: {incorrect}
+        </Typography>
+        <Typography sx={{ fontSize: { xs: "1.5rem", md: "3rem", lg: "3rem" } }}>
+          Hints remaining: {hints}
+        </Typography>
       </div>
       {content}
     </div>

@@ -67,7 +67,12 @@ export function StartMenu() {
           width: "1000px",
         }}
       >
-        <Typography variant="h1">Country Game</Typography>
+        <Typography
+          variant="h1"
+          sx={{ fontSize: { xs: "4rem", md: "6rem", lg: "6rem" } }}
+        >
+          Country Game
+        </Typography>
         <Typography variant="h4">Test your skills: </Typography>
         <div style={{ display: "flex", gap: "20px", flexDirection: "column" }}>
           <Link
@@ -80,7 +85,14 @@ export function StartMenu() {
           >
             <Button
               variant="outlined"
-              sx={{ width: "400px", color: "white" }}
+              sx={{
+                width: "400px",
+                color: "white",
+                "&:disabled": {
+                  backgroundColor: "rgba(255,255,255,0.1)",
+                  color: "white",
+                },
+              }}
               onClick={() => handleClick("flags")}
               disabled={flags > 0 ? true : false}
             >
@@ -94,7 +106,7 @@ export function StartMenu() {
                 variant="determinate"
                 value={flagScore}
                 sx={{
-                  backgroundColor: "transparent",
+                  backgroundColor: "rgba(255,255,255,0.1)",
                   border: "1px solid black",
                   height: "20px",
                   borderRadius: "20px",
@@ -114,7 +126,15 @@ export function StartMenu() {
           >
             <Button
               variant="outlined"
-              sx={{ width: "400px", color: "white" }}
+              sx={{
+                width: "400px",
+                color: "white",
+
+                "&:disabled": {
+                  backgroundColor: "rgba(255,255,255,0.1)",
+                  color: "white",
+                },
+              }}
               onClick={() => handleClick("currency")}
               disabled={currency > 0 ? true : false}
             >
@@ -148,7 +168,15 @@ export function StartMenu() {
           >
             <Button
               variant="outlined"
-              sx={{ width: "400px", color: "white" }}
+              sx={{
+                width: "400px",
+                color: "white",
+
+                "&:disabled": {
+                  backgroundColor: "rgba(255,255,255,0.1)",
+                  color: "white",
+                },
+              }}
               onClick={() => handleClick("languages")}
               disabled={languages > 0 ? true : false}
             >
@@ -182,7 +210,15 @@ export function StartMenu() {
           >
             <Button
               variant="outlined"
-              sx={{ width: "400px", color: "white" }}
+              sx={{
+                width: "400px",
+                color: "white",
+
+                "&:disabled": {
+                  backgroundColor: "rgba(255,255,255,0.1)",
+                  color: "white",
+                },
+              }}
               onClick={() => handleClick("capitals")}
               disabled={capitals > 0 ? true : false}
             >
@@ -205,18 +241,31 @@ export function StartMenu() {
             </Box>
           )}
         </div>
-        <div style={{ display: "flex", gap: "20px", flexDirection: "column" }}>
+        <div
+          style={{
+            display: "flex",
+            gap: "20px",
+            flexDirection: "column",
+          }}
+        >
           <Link
             to="/regions"
             style={{
               pointerEvents: regions > 0 ? "none" : "auto",
-              lineHeight: "3rem",
+              lineHeight: "0rem",
               color: "black",
             }}
           >
             <Button
               variant="outlined"
-              sx={{ width: "400px", color: "white" }}
+              sx={{
+                width: "400px",
+                color: "white",
+                "&:disabled": {
+                  backgroundColor: "rgba(255,255,255,0.1)",
+                  color: "white",
+                },
+              }}
               onClick={() => handleClick("regions")}
               disabled={regions > 0 ? true : false}
             >
@@ -261,8 +310,8 @@ export function StartMenu() {
       >
         <Box
           sx={{
-            height: "600px",
-            width: "900px",
+            height: "100vh",
+            width: "100vw",
             backgroundColor: "rgba(1,1,1,1)",
             display: "flex",
             alignItems: "center",
@@ -271,7 +320,12 @@ export function StartMenu() {
             gap: "20px",
           }}
         >
-          <Typography id="modal-modal-title" variant="h1" component="h2">
+          <Typography
+            id="modal-modal-title"
+            variant="h1"
+            component="h2"
+            sx={{ fontSize: { xs: "1.5rem", md: "3rem", lg: "3rem" } }}
+          >
             GAME OVER!
           </Typography>
           <Typography
