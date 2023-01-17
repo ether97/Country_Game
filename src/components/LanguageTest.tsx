@@ -60,9 +60,9 @@ export function LanguageTest() {
     }
   }
   return (
-    <div
-      style={{
-        height: "900px",
+    <Container
+      sx={{
+        height: { xs: "150vh", md: "100vh", lg: "100vh" },
         width: "100vw",
         display: "flex",
         alignItems: "center",
@@ -75,7 +75,7 @@ export function LanguageTest() {
           display: "flex",
           flexDirection: "column",
           gap: "20px",
-          height: "900px",
+          height: { xs: "150vh", md: "100vh", lg: "100vh" },
           justifyContent: "center",
         }}
       >
@@ -171,6 +171,6 @@ export function LanguageTest() {
           Hints remaining: {hints}
         </Typography>
       </Box>
-    </div>
+    </Container>
   );
 }
