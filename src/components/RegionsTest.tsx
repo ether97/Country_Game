@@ -102,7 +102,7 @@ export function RegionsTest() {
           justifyContent: "center",
         }}
       >
-        <h1 style={{ textAlign: "center", lineHeight: "0rem" }}>
+        <h1 style={{ textAlign: "center" }}>
           What region is {country} in? <br />
           <br />
         </h1>
