@@ -179,7 +179,7 @@ export function FlagTest() {
           sx={{
             position: "absolute",
             bottom: { xs: "-20px", md: "10px", lg: "10px" },
-            left: "20px",
+            left: { xs: "20px", md: "-330px", lg: "-330px" },
           }}
         >
           <Typography

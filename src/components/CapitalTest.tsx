@@ -162,7 +162,7 @@ export function CapitalTest() {
         sx={{
           position: "absolute",
           bottom: { xs: "-20px", md: "10px", lg: "10px" },
-          left: "20px",
+          left: { xs: "20px", md: "-330px", lg: "-330px" },
         }}
       >
         <Typography sx={{ fontSize: { xs: "1.5rem", md: "3rem", lg: "3rem" } }}>

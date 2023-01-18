@@ -21,14 +21,14 @@ export function Timer() {
   const navigate = useNavigate();
   const location = useLocation();
   console.log(location.pathname);
-  const [count, setCount] = useState(60);
+  const [count, setCount] = useState(5);
   const modal = useAppSelector((state) => state.game.start);
   const dispatch = useAppDispatch();
 
   const start = useAppSelector((state) => state.game.start);
 
   function handleClose() {
-    setCount(60);
+    setCount(5);
     dispatch(startGame());
     navigate("/");
     switch (location.pathname) {
@@ -51,7 +51,7 @@ export function Timer() {
   }
 
   function handleRetry() {
-    setCount(60);
+    setCount(5);
     switch (location.pathname) {
       case "/flags":
         dispatch(flagRefresh());
